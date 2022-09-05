@@ -17,7 +17,14 @@
 
 @media only screen and (max-width: 800px) {
   .content {
-    margin-left: 16px;
+    // margin-left: 16px;
+    margin: 0px;
+    border-radius: 0px;
+    height: 92.25vh;
+    overflow-y: hidden;
+  }
+  .tab-content{
+    margin-top: 33px;
   }
 }
 

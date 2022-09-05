@@ -16,14 +16,40 @@
     $skill-left 65%,
     $skill-right 65%,
     $skill-right 100%
-  )
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+
+  // plane gray wall w/ blue brick floor
+  // background-image: url(https://images.unsplash.com/photo-1519984930929-ebf9b55a5986?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2187&q=80);
+  // background-position: 100% 50%;
+  // background-size: fill;
+
+  // forrest road
+  background-image: url(https://images.unsplash.com/photo-1424746219973-8fe3bd07d8e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
+  background-size: cover;
+  background-position: center;
+
+  // Oregon road yellow orange and green
+  // background-image: url(https://images.unsplash.com/photo-1633848827861-c01f5142d73b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
+
+  // Brick corner
+  // background-image: url(https://images.unsplash.com/photo-1586827357189-1964b207c836?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80);
 
 }
 
 
 @media only screen and (max-width: 800px) {
   .content {
-    margin-left: 16px
+    // margin-left: 16px;
+    margin: 0px;
+    border-radius: 0px;
+    height: 92.25vh;
+    overflow-y: hidden;
+  }
+  .right {
+    padding-left: 10px;
   }
 }
 
@@ -56,6 +82,9 @@
   font-size: 24px;
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
+
+  // forrest background
+  background: thistle;
 }
 
 .left {
@@ -68,6 +97,9 @@
   font-size: 17px;
   line-height: 1.40;
   font-family: 'Poppins', sans-serif;
+
+  // forrest background
+  background: thistle;
 }
 
 .right {
@@ -78,6 +110,9 @@
   line-height: 1.4;
   margin-top: 0;
   font-family: 'Poppins', sans-serif;
+
+  // forrest background
+  background: thistle;
 }
 
 // shrink font size when smaller
