@@ -1,6 +1,6 @@
 {
   "/feeds": {
-    "target": "http://localhost:3010",
+    "target": "https://api.micahbessolo.com",
     "secure": false,
     "logLevel": "debug",
     "changeOrigin": "true"

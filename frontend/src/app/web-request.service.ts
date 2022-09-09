@@ -10,8 +10,8 @@ export class WebRequestService {
 
   constructor(private http: HttpClient) {
     // if in development, change below to http://localhost:3000
-    // this.ROOT_URL = "https://api.micahbessolo.com";
-    this.ROOT_URL = "http://localhost:3010";
+    this.ROOT_URL = "https://api.micahbessolo.com";
+    // this.ROOT_URL = "http://localhost:3010";
   }
 
   get(uri: string) {
