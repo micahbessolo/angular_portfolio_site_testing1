@@ -7,10 +7,10 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { SkillsComponent } from './skills/skills.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent, data: { animation: 'isLeft'} },
-  { path: 'skills', component: SkillsComponent, data: { animation: 'isLeft'}  },
-  { path: 'portfolio', component: PortfolioComponent, data: { animation: 'isRight'} },
-  { path: 'contact', component: ContactComponent, data: { animation: 'isRight'} },
+  { path: '', component: HomeComponent, data: { animation: 0 } },
+  { path: 'skills', component: SkillsComponent, data: { animation: 1 } },
+  { path: 'portfolio', component: PortfolioComponent, data: { animation: 2} },
+  { path: 'contact', component: ContactComponent, data: { animation: 3 } },
   { path: 'contact-success', component: ContactSuccessComponent }
 ];
 
