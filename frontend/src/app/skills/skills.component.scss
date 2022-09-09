@@ -10,35 +10,17 @@
   border-radius: 10px;
   column-count: 2;
   text-align: left;
-  background: linear-gradient(
-    to right,
-    $skill-left 0%,
-    $skill-left 65%,
-    $skill-right 65%,
-    $skill-right 100%
-  );
+
   background-repeat: no-repeat;
   background-attachment: fixed;
 
-
-  // plane gray wall w/ blue brick floor
-  // background-image: url(https://images.unsplash.com/photo-1519984930929-ebf9b55a5986?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2187&q=80);
-  // background-position: 100% 50%;
-  // background-size: fill;
-
   // forrest road
-  background-image: url(https://images.unsplash.com/photo-1424746219973-8fe3bd07d8e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
-  background-size: cover;
-  background-position: center;
+  // background-image: url(https://images.unsplash.com/photo-1424746219973-8fe3bd07d8e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
+  // background-size: cover;
+  // background-position: center;
 
-  // Oregon road yellow orange and green
-  // background-image: url(https://images.unsplash.com/photo-1633848827861-c01f5142d73b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
-
-  // Brick corner
-  // background-image: url(https://images.unsplash.com/photo-1586827357189-1964b207c836?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80);
-
+  background: $skills-background;
 }
-
 
 @media only screen and (max-width: 800px) {
   .content {
@@ -48,46 +30,60 @@
     height: 92.25vh;
     overflow-y: hidden;
   }
-  .right {
-    padding-left: 10px;
+}
+
+// shrink font size when smaller
+@media only screen and (max-width: 400px) {
+  .title {
+    font-size: 22px;
   }
 }
 
-// keeps right from crossing linear-gradient line
-@media only screen and (min-width: 1865px) {
+@media only screen and (max-width: 576px) {
   .right {
-    padding-left: 100px;
+    max-height: 700px;
   }
 }
-@media only screen and (min-width: 2500px) {
-  .right {
-    padding-left: 200px;
-  }
+
+.list {
+  float: inline;
 }
 
 .container {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-gap: 4px;
   padding-right: 30px;
   padding-left: 30px;
   position: relative;
   max-height: calc(100vh - 98px);
-  // overflow-y: scroll;
-  // background: red;
+}
+
+.profile {
+  clip-path: circle();
+  max-width: 315px;
 }
 
 .title {
   text-align: center;
-  font-size: 24px;
+  font-size: 26px;
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
+}
 
-  // forrest background
-  background: thistle;
+.full-left {
+  max-height: calc(100vh - 150px);
+  overflow-y: auto;
+  position: relative;
 }
 
 .left {
+  background: $skills-bubble;
+  // background: #ede1d6;
+  max-width: 315px;
+  border-radius: 15px;
+  overflow-y: auto;
+
+}
+
+.right {
   position: relative;
   padding-top: 18px;
   padding-left: 9px;
@@ -97,39 +93,20 @@
   font-size: 17px;
   line-height: 1.40;
   font-family: 'Poppins', sans-serif;
-
-  // forrest background
-  background: thistle;
+  background: $skills-bubble;
+  max-width: 471px;
+  border-radius: 15px;
 }
 
-.right {
-  position: absolute;
-  // right: 15vw;
-  left: 68%;
-  font-size: 17px;
-  line-height: 1.4;
-  margin-top: 0;
+li {
   font-family: 'Poppins', sans-serif;
-
-  // forrest background
-  background: thistle;
+  font-size: 17px;
 }
 
-// shrink font size when smaller
-@media only screen and (max-width: 400px) {
-  .title {
-    font-size: 22px;
-  }
-
-  .left {
-    padding-top: 7px;
-    font-size: 16px;
-  }
-
-  .right {
-    font-size: 16px;
-    top: 25%;
-  }
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 21px;
+  font-weight: bolder;
 }
 
 ul {
