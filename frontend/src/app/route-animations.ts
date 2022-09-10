@@ -35,7 +35,7 @@ function slideTo(direction: string){
     ]),
     group([
       query(':leave', [
-        animate('600ms ease', style({ [direction]: '0%'}))
+        animate('600ms ease', style({ opacity: 0, transform: 'scale(1) translateY(0)' }))
       ], optional),
       query(':enter', [
         animate('600ms ease', style({ [direction]: '0%'}))
