@@ -11,12 +11,12 @@ import {
 
 export const slider =
  trigger('routeAnimations', [
-  transition('* => 0', slideTo('bottom') ),
-  transition('* => 3', slideTo('top') ),
-  transition('3 => *', slideTo('bottom') ),
-  transition('0 => *', slideTo('top') ),
-  transition('1 => 2', slideTo('top') ),
-  transition('2 => 1', slideTo('bottom') )
+  transition('* => 0', slideTo('top') ),
+  transition('* => 3', slideTo('bottom') ),
+  transition('3 => *', slideTo('top') ),
+  transition('0 => *', slideTo('bottom') ),
+  transition('1 => 2', slideTo('bottom') ),
+  transition('2 => 1', slideTo('top') )
  ]);
 
 function slideTo(direction: string){

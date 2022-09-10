@@ -46,9 +46,22 @@
   padding-right: 9px;
 }
 
+.resume {
+  position: relative;
+  bottom: 45%;
+
+  font-size: 20px;
+  font-weight: 300;
+  width: auto;
+}
+
+.btn-success {
+  background: $dark-color;
+}
+
 @media only screen and (max-width: 450px) {
   .words {
     font-size: 1.65rem;
-    padding-top: 140px;
+    // padding-top: 140px;
   }
 }
