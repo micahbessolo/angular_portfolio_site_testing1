@@ -11,12 +11,12 @@ import {
 
 export const slider =
  trigger('routeAnimations', [
-  transition('* => 0', slideTo('left') ),
-  transition('* => 3', slideTo('right') ),
-  transition('3 => *', slideTo('left') ),
-  transition('0 => *', slideTo('right') ),
-  transition('1 => 2', slideTo('right') ),
-  transition('2 => 1', slideTo('left') )
+  transition('* => 0', slideTo('bottom') ),
+  transition('* => 3', slideTo('top') ),
+  transition('3 => *', slideTo('bottom') ),
+  transition('0 => *', slideTo('top') ),
+  transition('1 => 2', slideTo('top') ),
+  transition('2 => 1', slideTo('bottom') )
  ]);
 
 function slideTo(direction: string){
@@ -25,8 +25,9 @@ function slideTo(direction: string){
     query(':enter, :leave', [
       style({
         position: 'absolute',
+        width: '100%',
+        left: 0,
         [direction]: 0,
-        width: '100%'
       })
     ], optional),
     query(':enter', [
@@ -34,11 +35,11 @@ function slideTo(direction: string){
     ]),
     group([
       query(':leave', [
-        animate('600ms ease', style ({ [direction]: '100%'}))
+        animate('600ms ease', style({ [direction]: '0%'}))
       ], optional),
       query(':enter', [
         animate('600ms ease', style({ [direction]: '0%'}))
       ])
-    ])
+    ]),
   ];
 }

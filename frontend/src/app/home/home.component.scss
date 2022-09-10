@@ -6,8 +6,7 @@
 
 
 .content {
-  height: calc(100vh - 98px);
-
+  height: calc(100vh - 99px);
   margin: 16px;
   margin-left: 32px;
   display: flex;
@@ -15,8 +14,7 @@
   align-items: center;
   border-radius: 10px;
   background-image: url("https://images.unsplash.com/photo-1588655094662-d6461b53045b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80");
-
-  background-attachment: fixed;
+  background-attachment: local;
   background-color: #cccccc;
   background-repeat: no-repeat;
   background-size: cover;
@@ -26,14 +24,11 @@
   .content {
     margin: 0px;
     border-radius: 0px;
-    height: 92.25vh;
+    // height: 92.25vh;
+    height: calc(100vh - 67.2px);
     bottom: 0px;
-    overflow-y: hidden visible;
-    // margin-left: 16px
     margin: 0px;
     border-radius: 0px;
-    height: 91vh;
-    overflow-y: hidden;
   }
 }
 
@@ -41,12 +36,14 @@
   font-size: 2rem;
   color: black;
   font-weight: 550;
-  padding-bottom: 370px;
-  padding-right: 9px;
   line-height: 55px;
   font-family: 'Poppins', sans-serif;
   font-size: 30px;
   font-weight: 500;
+
+  padding-bottom: 310px;
+  bottom: 75%;
+  padding-right: 9px;
 }
 
 @media only screen and (max-width: 450px) {

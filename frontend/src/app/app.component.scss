@@ -1,10 +1,12 @@
-
 @import "../vars.scss";
+
 * {
   padding: 0;
 }
 
-//navbar
+.navbar {
+  padding-top: 15px;
+}
 
  //when clicked
 .navbar-active {
@@ -17,7 +19,6 @@
 
 .bg-custom {
   background-color: $dark-color;
-  padding-top: 12.5px;
 }
 
 .nav-link {
@@ -59,30 +60,14 @@
 
 .navbar-nav {
   position: absolute;
-  height: c34px;
-  left: c100px;
+  // height: c34px;
+  // left: c100px;
 }
 
 // sidebar
-.mat-sidenav {
-  margin: 16px;
-  width: 255px;
-  border-right: none;
-  background: $menu-color;
-  color: white;
-  border-radius: 10px;
-  padding-top: 30px;
+.sidebar {
   text-align: center;
-  overflow: hidden;
-}
-
-.profile {
-  width: 120px;
-  clip-path: circle();
-  margin: 0px 0;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  background: $background-color;
 }
 
 .sidebar h1{
@@ -102,10 +87,6 @@
   padding: 20px;
 }
 
-.sidebar {
-  text-align: center;
-}
-
 .sidebar ul {
   text-align: left;
   padding-left: 30px;
@@ -118,13 +99,13 @@
   margin: 50px 0;
 }
 
-@media only screen and (max-height: 716px) {
+@media only screen and (max-height: 700px) {
   .sidebar ul li {
-    margin: 25px 0;
+    margin: 30px 0;
   }
 }
 
-@media only screen and (max-height: 590px) {
+@media only screen and (max-height: 600px) {
   .sidebar ul li {
     margin: 10px 0;
   }
@@ -142,6 +123,10 @@
   color: $dark-color;
 }
 
+.contact {
+  margin-bottom: -20px;
+}
+
 // sidebar active
 .active {
   position:relative;
@@ -150,6 +135,27 @@
 
 .sidebar ul li a i:hover {
   position: fixed;
+}
+
+.mat-sidenav {
+  margin: 16px;
+  width: 255px;
+  border-right: none;
+  background: $menu-color;
+  color: white;
+  border-radius: 10px;
+  padding-top: 30px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.profile {
+  width: 120px;
+  clip-path: circle();
+  margin: 0px 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 // sidebar open button
@@ -261,5 +267,11 @@ button {
 /* above is social media icons */
 
 mat-sidenav-container {
-  height: calc(100vh - 65px);
+  height: calc(100vh - 67px);
+  position: relative;
+  overflow-y: hidden;
+}
+
+mat-sidenav {
+
 }

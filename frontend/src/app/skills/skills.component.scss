@@ -1,7 +1,7 @@
 @import "../../vars.scss";
 
 .content {
-  height: calc(100vh - 98px);
+  height: calc(100vh - 99px);
   margin: 16px;
   margin-left: 32px;
   display: flex;
@@ -27,9 +27,8 @@
     // margin-left: 16px;
     margin: 0px;
     border-radius: 0px;
-    height: 92.25vh;
+    height: calc(100vh - 67.2px);
     overflow-y: hidden;
-    height: 91vh;
     overflow-y: hidden;
   }
   .right {
@@ -85,7 +84,6 @@
   max-width: 315px;
   border-radius: 15px;
   overflow-y: auto;
-
 }
 
 .right {
@@ -101,6 +99,35 @@
   background: $skills-bubble;
   max-width: 471px;
   border-radius: 15px;
+}
+
+.backend {
+  padding-top: 0px;
+  margin-top: 0px;
+  padding-left: 10px;
+  padding-bottom: -10px;
+  margin-bottom: -3px;
+}
+
+.frontend {
+  padding-bottom: -5px;
+  margin-bottom: 0px;
+  padding-left: 10px;
+}
+
+.frontendTitle {
+  padding-bottom: -10px;
+  margin-bottom: -10px;
+}
+
+.other {
+  padding-bottom: -9px;
+  padding-left: 10px;
+}
+
+.otherTitle {
+  padding-bottom: -10px;
+  margin-bottom: -10px;
 }
 
 li {
