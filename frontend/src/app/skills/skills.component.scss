@@ -8,28 +8,15 @@
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  column-count: 2;
   text-align: left;
-
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-
-  // forrest road
-  // background-image: url(https://images.unsplash.com/photo-1424746219973-8fe3bd07d8e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
-  // background-size: cover;
-  // background-position: center;
-
   background: $skills-background;
 }
 
 @media only screen and (max-width: 800px) {
   .content {
-    // margin-left: 16px;
     margin: 0px;
     border-radius: 0px;
     height: calc(100vh - 67.2px);
-    overflow-y: hidden;
-    overflow-y: hidden;
   }
   .right {
     padding-left: 10px;
@@ -49,16 +36,10 @@
   }
 }
 
-.list {
-  float: inline;
-}
-
 .container {
   padding-right: 30px;
   padding-left: 30px;
-  position: relative;
   max-height: calc(100vh - 98px);
-  // max-width: 1500px;
 }
 
 .profile {
@@ -76,19 +57,16 @@
 .full-left {
   max-height: calc(100vh - 150px);
   overflow-y: auto;
-  position: relative;
 }
 
 .left {
   background: $skills-bubble;
-  // background: #ede1d6;
   max-width: 315px;
   border-radius: 15px;
   overflow-y: auto;
 }
 
 .right {
-  position: relative;
   padding-top: 18px;
   padding-left: 9px;
   padding-right: 10px;
@@ -104,36 +82,20 @@
 
 .backend {
   padding-top: 0px;
-  margin-top: 0px;
   padding-left: 10px;
-  padding-bottom: -10px;
-  margin-bottom: -3px;
 }
 
 .frontend {
-  padding-bottom: -5px;
-  margin-bottom: 0px;
   padding-left: 10px;
-}
-
-.frontendTitle {
-  padding-bottom: -10px;
-  margin-bottom: -10px;
 }
 
 .other {
-  padding-bottom: -9px;
   padding-left: 10px;
 }
 
-.otherTitle {
+.rightTitle {
   padding-bottom: -10px;
   margin-bottom: -10px;
-}
-
-li {
-  font-family: 'Poppins', sans-serif;
-  font-size: 17px;
 }
 
 h2 {
@@ -144,13 +106,10 @@ h2 {
 
 ul {
   list-style-type: none;
-  padding-left: 5px;
   padding-top: 8px;
 }
 
-.list {
-  text-align: left;
+li {
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
 }
-
-
-
