@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  overflow-y: scroll;
   border-radius: 10px;
   background-attachment: fixed;
   background: $portfolio-background !important;
@@ -27,147 +27,18 @@
   }
 }
 
-.nav {
-  position: absolute;
-  top: 16px;
-  background: #cccccc;
-  width: 300px;
-}
-
-.nav-link {
-  background: lightgrey;
-}
-
-.tab-content {
-  position: relative;
-  justify-content: center;
-  background: white;
-  height: 100%;
-  overflow-y: scroll;
-  border-radius: 5px;
-  margin-left: 16px;
-  margin-right: 16px;
-  top: 54px;
-  bottom: 20px;
-  margin-bottom: 32px;
-}
-
-.tab-pane {
-  max-width: 1000px;
-}
-
-// temporary setting
-.proj2 {
-  width: 1000px;
-}
-
-.accordion-header {
-  height: 50px;
-}
-
-h4 {
-  text-align: left;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1em;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-family: 'Poppins', sans-serif;
-}
-
-.tab-pane ul li {
-  font-size: 15px;
-  line-height: 2rem;
-  text-align: left;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-family: 'Poppins', sans-serif;
-}
-
-.otherFront li {
-  font-size: 15px;
-  line-height: 2rem;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-family: 'Poppins', sans-serif;
-}
-
-p {
-  text-align: left;
-  font-size: 16px;
-  padding-top: 15px;
-  padding-left: 15px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-family: 'Poppins', sans-serif;
-}
-
-.tab-pane ul {
-  margin-bottom: 0px;
-}
-
-@media screen and (max-width: 376px) {
-  .tab-pane ul li {
-    line-height: 1.50rem;
-  }
-  .mat-elevation-z4 {
-    box-shadow: none !important;
+@media only screen and (max-width: 1355px) {
+  .container {
+    padding-top: 590px;
   }
 }
 
-.backendLi {
-  padding-left: 45px;
+.card {
+  margin: 0 auto;
+  float: none;
+  border-radius: 10px;
 }
 
-.other {
-  text-align: left;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 2em;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-family: 'Poppins', sans-serif;
+.card img {
+  border-radius: 10px;
 }
-
-.otherFront {
-  padding-left: 60px;
-  padding-top: 0px;
-}
-
-.title {
-  padding-top: 15px;
-}
-
-.imgTitle {
-  text-align: center;
-  font-size: 15px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-family: 'Poppins', sans-serif;
-}
-
-label {
-  font-size: 15px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-family: 'Poppins', sans-serif;
-}
-
-.text {
-  display: block;
-}
-
-.container {
-  width: 100%;
-}
-
-img {
-  max-height: 350px;
-}
-
-@media only screen and (max-width: 768px) {
-  img {
-    // display: none;
-  }
-  .imgTitle {
-    // display: none;
-  }
-}
-
-.nav-tabs {
-  margin-bottom: 0;
-}
-

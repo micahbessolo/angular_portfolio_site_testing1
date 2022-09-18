@@ -1,125 +1,51 @@
- <div class="content mat-elevation-z4 ">
-
-  <!-- tabs buttons -->
-  <ul class="nav nav-tabs" id="myTab" role="tablist">
-    <li class="nav-item" role="presentation">
-      <button class="nav-link active" id="website-tab" data-bs-toggle="tab"
-      data-bs-target="#home" href="#home" type="button" role="tab"
-      aria-controls="home" aria-selected="true" (click)="clickedButton(0)">Personal Website</button>
-    </li>
-    <li class="nav-item" role="presentation">
-      <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
-      data-bs-target="#profile" type="button" role="tab"
-      aria-controls="profile" aria-selected="false" (click)="clickedButton(1)" >project</button>
-    </li>
-    <li class="nav-item" role="presentation">
-      <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
-      data-bs-target="#contact" type="button" role="tab"
-      aria-controls="contact" aria-selected="false" (click)="clickedButton(2)">project</button>
-    </li>
-  </ul>
-
-  <!-- tab content -->
-  <div class="tab-content" name="myTabContent">
-
-    <!-- Personal website tab -->
-    <div class="tab-pane fade show active" #home id="website" role="tabpanel" aria-labelledby="website-tab">
-      <div class="pb-2"></div>
-      <a type="button" class="btn btn-secondary" href="https://github.com/micahbessolo/portfolio_site">See Code</a>
-      <div class="pt-2"></div>
-      <div class="container">
-
-        <!--Accordion-->
-        <div class="accordion" id="accordion">
-          <!--backend-->
-          <div class="accordion-item">
-            <!--backend button-->
-            <h2 class="accordion-header">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" id="backend"
-              data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
-              (click)="accordionButton()">
-                Backend
-              </button>
-            </h2>
-            <!--backend collapsable content-->
-            <div id="backendCollapse" class="accordion-collapse collapse show"
-            aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <div class="row">
-                  <div class="col-md-7">
-                    <ul class="backendLi">
-                      <li>Contact form data is verified and then posted to a MongoDb database</li>
-                      <li>API developed with ExpressJS and NodeJS</li>
-                      <li>Utilized reverse proxy to securely transmit data from client to database</li>
-                    </ul>
-                    <label class="pt-3">command terminal</label>
-                    <img src="https://i.imgur.com/eqrjzQz.png" class="pt-2 pb-2 img-fluid"  height="auto">
-                  </div>
-                  <div class="col-md-5 pt-4 pb-2">
-                    <label class="pb-3">GET request on Postman</label>
-                    <img src="https://i.imgur.com/qDMk6hX.png" alt="database via Postman"  class="img-fluid" >
-                  </div>
-                </div>
-              </div>
-            </div>
+<div class="content mat-elevation-z4 ">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <div class="card" style="width: 31rem;">
+          <img class="card-img-top pb-0 mb-0" src="https://i.imgur.com/uIY0RtI.gif" alt="website gif">
+          <div class="card-body">
+            <h2 class="card-title pb-0 mb-0 pt-0 mt-0">Portfolio Website</h2>
+            <p class="card-text pt-0 mt-0">
+              I developed this portfolio website using the full MEAN stack and deployed it through AWS.
+              I used BS5 and media-queries for a responsive design. Also, I used Used Express and Node
+              to setup REST API to route form entries to MongoDB.
+            </p>
+            <a href="https://github.com/micahbessolo/portfolio_site" class="btn btn-primary">Github</a>
           </div>
-
-          <!--frontend -->
-          <div class="accordion-item">
-            <!--frontend button-->
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              id="frontend" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
-              (click)="accordionButton()">
-                Frontend
-              </button>
-            </h2>
-            <!--frontend collapsable content-->
-            <div id="frontendCollapse" class="accordion-collapse collapse"
-            aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <div class="row">
-                  <div class="col-md-8">
-                    <ul>
-                      <li>Developed the front-end of this single-page website using the Angular, HTML, and SCSS</li>
-                      <li>Includes a fully-responsive mobile-first design thanks to Bootstrap5, Media Queries, and TypeScript</li>
-                    </ul>
-                    <p class="">Also includes:</p>
-                    <ul class="otherFront">
-                      <li>Responsive Sidebar</li>
-                      <li>Hover effects</li>
-                      <li>Classes added based on URL</li>
-                      <li>Click functions for form validation and buttons</li>
-                      <li>lots of Typescript</li>
-                    </ul>
-                  </div>
-                  <div class="col-md-4 pt-4">
-                    <label class="imgTitle pb-1">fully responsive</label>
-                    <!-- <img src="https://i.imgur.com/iQfmNPL.png" alt="website on iPhone" class="img-fluid"> -->
-                    <img src="https://i.imgur.com/9Cdx7pD.jpg" alt="website on iPhone" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
-
+      </div>
+      <div class="col-sm">
+        <div class="card" style="width: 31rem;">
+          <img class="card-img-top pb-0 mb-0" src="https://i.imgur.com/MMPvRaj.gif" alt="website gif">
+          <div class="card-body">
+            <h2 class="card-title pb-0 mb-0 pt-0 mt-0">E-Commerce Site</h2>
+            <p class="card-text pt-0 mt-0">
+              I developed this E-commerce site using React and the Commerce.js API. I began this project
+              with the goal to learn to use the React library. While this is functional, it is still work
+              in progress and I will be improving the frontend and adding a landing page.
+            </p>
+            <a href="https://github.com/micahbessolo/React_e_commerce" class="btn btn-primary">Github</a>
+          </div>
+        </div>
+      </div>
+    <div class="row pt-4 m-0">
+      <div class="col-sm">
+        <div class="card" style="width: 31rem;">
+          <img class="card-img-top" src="..." alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="card" style="width: 31rem;">
+          <img class="card-img-top" src="..." alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
       </div>
     </div>
-
-    <!-- project 2 -->
-    <div class="tab-pane fade show proj2" #profile id="profile" role="tabpanel" aria-labelledby="profile-tab">
-      <br><br>
-      <h2>Project 1 in progress</h2>
-
-    </div>
-
-    <!-- project 3 -->
-    <div class="tab-pane fade show proj2" #contact id="contact" role="tabpanel" aria-labelledby="contact-tab">
-      <br><br>
-      <h2>Project 2 Coming Soon!</h2>
-    </div>
-
   </div>
 </div>
