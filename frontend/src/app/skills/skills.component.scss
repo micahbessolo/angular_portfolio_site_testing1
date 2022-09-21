@@ -37,14 +37,18 @@
 }
 
 .container {
-  padding-right: 30px;
-  padding-left: 30px;
   max-height: calc(100vh - 98px);
 }
 
 .profile {
   clip-path: circle();
   max-width: 315px;
+  transition: .5s;
+  margin-top: 5px;
+}
+
+.profile:hover {
+  transform:scale(1.05);
 }
 
 .title {
@@ -61,9 +65,15 @@
 
 .left {
   background: $skills-bubble;
-  max-width: 315px;
+  max-width: 300px;
   border-radius: 15px;
   overflow-y: auto;
+  transition: .5s;
+  margin-left: 8.5px;
+}
+
+.left:hover {
+  transform:scale(1.05);
 }
 
 .right {
@@ -78,6 +88,11 @@
   background: $skills-bubble;
   max-width: 471px;
   border-radius: 15px;
+  transition: .5s;
+}
+
+.right:hover {
+  transform:scale(1.05);
 }
 
 .backend {
