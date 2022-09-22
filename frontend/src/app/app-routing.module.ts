@@ -7,6 +7,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { SkillsComponent } from './skills/skills.component';
 
 const routes: Routes = [
+  {path:'**', redirectTo: '/'},
   { path: '', component: HomeComponent, data: { animation: 0 } },
   { path: 'skills', component: SkillsComponent, data: { animation: 1 } },
   { path: 'portfolio', component: PortfolioComponent, data: { animation: 2} },

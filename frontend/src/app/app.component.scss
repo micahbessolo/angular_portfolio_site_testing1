@@ -272,3 +272,8 @@ mat-sidenav-container {
   overflow-y: hidden;
 }
 
+.loader-container{
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+}

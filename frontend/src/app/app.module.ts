@@ -17,8 +17,11 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ContactSuccessComponent } from './contact-success/contact-success.component';
 
-// animations
+// animation
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+// loading animation
+import {MatProgressBarModule} from  '@angular/material/progress-bar';
 
 @NgModule({
   declarations: [
@@ -39,7 +42,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatButtonModule,
     MatIconModule,
     MatDividerModule,
-    HttpClientModule
+    HttpClientModule,
+    MatProgressBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
