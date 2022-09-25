@@ -19,6 +19,7 @@ export const slider =
   transition('2 => 1', slideTo('top') )
  ]);
 
+
 function slideTo(direction: string){
   const optional = { optional: true };
   return [
