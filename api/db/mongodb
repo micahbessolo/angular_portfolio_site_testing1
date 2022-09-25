@@ -1,8 +1,0 @@
-This was created to copy and paste onto the MongoDB shell.
-
-db.createUser({
-  user : "Micah",
-  pwd : "Rbyst3005",
-  roles: [ { role: "readWrite", db: "ContactFeed" },
-            { role: "read", db: "ContactFeed" } ]
-});
