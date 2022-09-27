@@ -18,6 +18,9 @@ import { LoaderService } from './loader/loader.service';
 })
 
 export class AppComponent {
+  title(title: any) {
+    throw new Error('Method not implemented.');
+  }
 
   // for sidenav
   @ViewChild(MatSidenav)
