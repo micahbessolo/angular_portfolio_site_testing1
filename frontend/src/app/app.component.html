@@ -43,69 +43,69 @@
 </div>
 
 <!--sidebar-->
-<mat-sidenav-container class="sidebar">
-  <mat-sidenav mode="over" #sidenav="matSidenav" class="mat-elevation-z4">
-      <img src="https://i.imgur.com/cG0qcxB.jpg" class="profile" alt="profile">
-      <h1>Micah Bessolo</h1>
-      <h2>Web Developer</h2>
-      <ul class="list_items" id="nav">
-        <div class="home newClass" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-          <li>
-            <a class="button">
-              <i class="fa-solid fa-house"></i>
-                <span > Home</span>
-            </a>
-          </li>
-        </div>
-        <div class="skills newClass" routerLink="/skills" routerLinkActive="active">
-          <li>
-            <a class="button">
-                <i class="fa-solid fa-screwdriver-wrench"></i>
-                <span> About</span>
-            </a>
-          </li>
-        </div>
-        <div class="shapes">
-        </div>
-        <div class="portfolio newClass" routerLink="/portfolio" routerLinkActive="active">
-          <li>
-            <a class="button">
-                <i class="fa-regular fa-folder"></i>
-                <span> Portfolio</span>
-            </a>
-          </li>
-        </div>
+<div #sidebar>
+  <mat-sidenav-container class="sidebar">
+    <mat-sidenav mode="over" #sidenav="matSidenav" class="mat-elevation-z4">
+        <img src="https://i.imgur.com/cG0qcxB.jpg" class="profile" alt="profile">
+        <h1>Micah Bessolo</h1>
+        <h2>Web Developer</h2>
+        <ul class="list_items" id="nav">
+          <div class="home newClass" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+            <li>
+              <a class="button">
+                <i class="fa-solid fa-house"></i>
+                  <span > Home</span>
+              </a>
+            </li>
+          </div>
+          <div class="skills newClass" routerLink="/skills" routerLinkActive="active">
+            <li>
+              <a class="button">
+                  <i class="fa-solid fa-screwdriver-wrench"></i>
+                  <span> About</span>
+              </a>
+            </li>
+          </div>
+          <div class="shapes">
+          </div>
+          <div class="portfolio newClass" routerLink="/portfolio" routerLinkActive="active">
+            <li>
+              <a class="button">
+                  <i class="fa-regular fa-folder"></i>
+                  <span> Portfolio</span>
+              </a>
+            </li>
+          </div>
 
-        <div class="contact newClass" routerLink="/contact" routerLinkActive="active">
-          <li>
-            <a class="button">
-                <i class="fa-regular fa-envelope"></i>
-                <span> Contact</span>
-            </a>
-          </li>
-        </div>
+          <div class="contact newClass" routerLink="/contact" routerLinkActive="active">
+            <li>
+              <a class="button">
+                  <i class="fa-regular fa-envelope"></i>
+                  <span> Contact</span>
+              </a>
+            </li>
+          </div>
+      </ul>
 
+  <!--social media icons-->
+      <div class="wrapper">
+        <a class="icon linkedin" href="https://www.linkedin.com/in/micah-bessolo-721887b6/">
+            <div class="tooltip">Linkedin</div>
+            <span><i class="fab fa-linkedin"></i></span>
+        </a>
+        <a class="icon git" href="https://github.com/micahbessolo">
+            <div class="tooltip">Github</div>
+            <span><i class="fab fa-github"></i></span>
+        </a>
+      </div>
+    </mat-sidenav>
 
-    </ul>
-
-<!--social media icons-->
-    <div class="wrapper">
-      <a class="icon linkedin" href="https://www.linkedin.com/in/micah-bessolo-721887b6/">
-          <div class="tooltip">Linkedin</div>
-          <span><i class="fab fa-linkedin"></i></span>
-      </a>
-      <a class="icon git" href="https://github.com/micahbessolo">
-          <div class="tooltip">Github</div>
-          <span><i class="fab fa-github"></i></span>
-      </a>
+  <mat-sidenav-content>
+    <div>
+      <main [@routeAnimations]="prepareRoute(outlet)" class="content">
+        <router-outlet #outlet="outlet"></router-outlet>
+      </main>
     </div>
-  </mat-sidenav>
-
-<mat-sidenav-content>
-  <div>
-    <main [@routeAnimations]="prepareRoute(outlet)" class="content">
-      <router-outlet #outlet="outlet"></router-outlet>
-    </main>
-  </div>
-</mat-sidenav-content>
-</mat-sidenav-container>
+  </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

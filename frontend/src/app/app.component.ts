@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 import { MatSidenav } from '@angular/material/sidenav';
 import { BreakpointObserver } from '@angular/cdk/layout';
 
@@ -26,10 +26,13 @@ export class AppComponent {
   @ViewChild(MatSidenav)
   sidenav!: MatSidenav;
 
+  // measures sidebar
+  @ViewChild('sidebar') anyName!: ElementRef
+
   constructor(private observer: BreakpointObserver,
     public loaderService: LoaderService) {  }
 
-  ngAfterViewInit(){
+  ngAfterViewInit(): void {
 
     this.observer.observe(['(max-width: 800px)']).subscribe((res)=> {
       if (res.matches){
@@ -40,6 +43,7 @@ export class AppComponent {
         this.sidenav.open();
       }
     });
+    console.log(this.anyName.nativeElement.clientHeight)
   }
 
   prepareRoute(outlet: RouterOutlet) {
